@@ -2,9 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>项目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="user-scalable=0">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>project</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
+<div class="container">
+    <div class="box">
+        <div class="box_head">
+            <img src="img/head_info.png">
+        </div>
+        <div class="box_info">
+            <div class="info_my_self">
+                <div class="box_info_left">
+                    <div class="info_left_border">
+                        <img class="info_left_border_img" src="img/my_seft_po.png">
+                    </div>
+                    <div class="my_self_web">
+                        <img src="img/wechat.jpg">
+                    </div>
+                </div>
+                <div class="box_info_right">
+                    <div class="box_info_right_basic">
+                        <div class="box_info_right_jiben_i">基本信息</div>
+                        <div class="box_info_right_jiben_j">BASIC INFORMATION</div>
+                        <div class="box_info_right_i">姓名：肖志坚</div>
+                        <div class="box_info_right_i">年龄：22岁</div>
+                        <div class="box_info_right_i">专业：物联网应用技术</div>
+                        <div class="box_info_right_i">邮箱：18827353753@163.com</div>
+                        <div class="box_info_right_i">期望职位：UI设计师</div>
+                    </div>
+                    <div class="box_info_right_skill">
+                        <div class="box_info_right_jiben_i">职业技能</div>
+                        <div class="box_info_right_jiben_j">PROFESSIONNAL SKILLS</div>
+                        <div class="right_skill_r_box">
+                            <div class="right_skill_r">PS</div>
+                            <div class="right_skill_r">AI</div>
+                            <div class="right_skill_r">AE</div>
+                            <div class="right_skill_r">SK</div>
+                            <div class="right_skill_r">XM</div>
+                            <div class="right_skill_r">AX</div>
+                            <div class="right_skill_r">DW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info_contents_box">
+                <div class="info_contents">
+                    <img class="info_contents_head" src="img/moen_ml.png">
+                </div>
+                <div class="info_contents_type_box">
+                    <div class="info_contents_type" id="contents_type">
+                        <div class="info_contents_app info_contents_style">移动端App</div>
+                        <div class="info_contents_web">网页设计</div>
+                        <div class="info_contents_other">其他</div>
+                    </div>
+                </div>
+                <div class="info_contents_one">
+                    <div class="info_contents_app_box">
+                        <img src="img/one_echt.png">
+                    </div>
+                    <div class="info_contents_app_box">
+                        <img src="img/l_lvee.png">
+                    </div>
+                </div>
+                <div class="info_contents_two">
+                    <div class="info_contents_web_box">
+                        <img src="img/web_type.png">
+                    </div>
+                </div>
+                <div class="info_contents_three">
+                    <div class="info_contents_other_box">
+                        <img src="img/other.png">
+                    </div>
+                    <div class="info_contents_thank_box">
+                        <img src="img/thank.png">
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".info_contents_app").click(function () {
+        $("#contents_type div").removeClass("info_contents_style")
+        $(this).addClass("info_contents_style");
+        $(".info_contents_one").css("display",'block');
+        $(".info_contents_two").css("display",'none');
+        $(".info_contents_three").css("display",'none');
+    })
+    $(".info_contents_web").click(function () {
+        $("#contents_type div").removeClass("info_contents_style")
+        $(this).addClass("info_contents_style");
+        $(".info_contents_two").css("display",'block');
+        $(".info_contents_one").css("display",'none');
+        $(".info_contents_three").css("display",'none');
+    })
+    $(".info_contents_other").click(function () {
+        $("#contents_type div").removeClass("info_contents_style")
+        $(this).addClass("info_contents_style");
+        $(".info_contents_three").css("display",'block');
+        $(".info_contents_one").css("display",'none');
+        $(".info_contents_two").css("display",'none');
+    })
+</script>
+<!--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--$(window).scroll(function () {-->
+<!--if ($(window).scrollTop() > 200)-->
+<!--{-->
+<!--$("#asagi").addClass('box_m');-->
+<!--}-->
+<!--else{-->
+<!--$("#asagi").removeClass('box_m');-->
+<!--}-->
+<!--})-->
+
+<!--</script>-->
 </body>
 </html>
