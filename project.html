@@ -111,6 +111,16 @@
         $(".info_contents_one").css("display",'none');
         $(".info_contents_two").css("display",'none');
     })
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 200)
+        {
+            $("#asagi").addClass('box_m');
+        }
+        else{
+            $("#asagi").removeClass('box_m');
+        }
+    })
 </script>
 <!--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
 <!--<script type="text/javascript">-->

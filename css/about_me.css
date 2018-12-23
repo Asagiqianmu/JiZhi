@@ -53,7 +53,7 @@ body {
 	width: 240px;
 	height: 240px;
 	border-radius: 280px;
-	border:3px dashed #000000;
+	border:3px solid #cdd9e9;
 }
 .info_Self_evaluation{
 	width: 240px;
@@ -148,7 +148,7 @@ body {
 }
 .details_info_line{
 	width: 100%;
-	border: 1px dashed #727272;
+	border: 1px dashed #89C6C6;
 	margin: 30px 0;
 }
 .details_Work_experience{
