@@ -72,12 +72,18 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+.list_info_i_box_i{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
 .list_info_i{
 	height: 50px;
 	line-height: 50px;
 	margin-left: 55px;
 	font-size: 24px;
 	color: #778495;
+	/*overflow: hidden;*/
+	white-space: nowrap;
 
 }
 .icon_style_i{
@@ -100,6 +106,10 @@ body {
 }
 .list_info_i_s{
 	margin-left: 10px;
+	color: rgba(0,0,0,.8);
+}
+.list_info_i_ss{
+	margin-left: 115px;
 	color: rgba(0,0,0,.8);
 }
 .info_Work_experience{
