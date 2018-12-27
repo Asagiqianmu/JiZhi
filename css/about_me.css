@@ -1,9 +1,10 @@
 body {
 	padding: 0;
     margin: 0;
-    font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
+    font-family:"Microsoft YaHei";
 	background-color: #eee;
 }
+
 .clearfix::before,
 .clearfix::after {
 	content: "";
@@ -41,19 +42,20 @@ body {
 	float: left;
 	width: 350px;
 	height: 100%;
+	position: relative;
+	z-index: 100;
 }
 .info_img{
 	margin-top: 100px;
-	width: 240px;
-	height: 240px;
+	width: 238px;
+	height: 333px;
 	margin-left: 55px;
-	border-radius: 280px;
+	/*border-radius: 280px;*/
+	overflow: hidden;
+	border:3px solid #cdd9e9;
 }
 .info_img_i{
 	width: 240px;
-	height: 240px;
-	border-radius: 280px;
-	border:3px solid #cdd9e9;
 }
 .info_Self_evaluation{
 	width: 240px;
@@ -62,31 +64,73 @@ body {
 	margin-left: 55px;
 	margin-top: 50px;
 	text-align: center;
-	color: #89C6C6;
+	color: #778495;
 	font-size: 30px;
-	border: 2px solid #89C6C6;
+	border: 2px solid #778495;
+}
+.list_info_i_box{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.list_info_i{
+	height: 50px;
+	line-height: 50px;
+	margin-left: 55px;
+	font-size: 24px;
+	color: #778495;
+
+}
+.icon_style_i{
+	position: relative;
+	top: 8px;
+	width: 38px;
+	height: 38px;
+}
+.icon_style_ii{
+	position: relative;
+	top: 7px;
+	width: 34px;
+	height: 34px;
+}
+.icon_style{
+	position: relative;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+.list_info_i_s{
+	margin-left: 10px;
+	color: rgba(0,0,0,.8);
 }
 .info_Work_experience{
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: 55px;
-	margin-top: 210px;
 	text-align: center;
-	color: #89C6C6;
+	color: #778495;
 	font-size: 30px;
-	border: 2px solid #89C6C6;
+	border: 2px solid #778495;
 }
 .info_Project_experience{
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: 55px;
-	margin-top: 255px;
 	text-align: center;
-	color: #89C6C6;
+	color: #778495;
 	font-size: 30px;
-	border: 2px solid #89C6C6;
+	border: 2px solid #778495;
+}
+.self_commet{
+	padding: 0 55px;
+	box-sizing: border-box;
+	color: rgba(0,0,0,.8);
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-indent: 2em;
+	line-height: 38px;
 }
 .info_Personal_information{
 	width: 240px;
@@ -95,9 +139,9 @@ body {
 	margin-left: 55px;
 	margin-top: 50px;
 	text-align: center;
-	color: #89C6C6;
+	color: #778495;
 	font-size: 30px;
-	border: 2px solid #89C6C6;
+	border: 2px solid #778495;
 }
 .info_Vocational_skills{
 	width: 240px;
@@ -106,9 +150,9 @@ body {
 	margin-left: 55px;
 	margin-top: 890px;
 	text-align: center;
-	color: #89C6C6;
+	color: #778495;
 	font-size: 30px;
-	border: 2px solid #89C6C6;
+	border: 2px solid #778495;
 }
 .box_right{
 	float: right;
@@ -117,16 +161,44 @@ body {
 	background-color: #ffffff;
 	padding: 0 55px;
 	box-sizing: border-box;
+	position: relative;
+	z-index: 99;
 }
 .details_info{
 	margin-top: 100px;
 }
+.edu_title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	/*background-color: #778495;*/
+	/*color: #ffffff;*/
+	font-size: 30px;
+	color: rgba(0,0,0,.8);
+	font-weight: bold;
+}
+.edu_title_span{
+	margin-left: 20px;
+}
 .details_info_name{
 	font-size: 45px;
-	color: #89C6C6;
+	color: #778495;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.Job_intention{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 28px;
 }
 .details_info_Self{
-	margin-top: 50px;
+	margin-top: 20px;
+}
+.info_Self_one_title{
+	font-size: 22px;
+	color: #778495;
 }
 .info_Self_one{
 	 width: 100%;
@@ -136,6 +208,12 @@ body {
 .info_Self_two{
 	width: 100%;
 	height: 50px;
+}
+.info_Self_box{
+	font-size: 22px;
+	width: 100%;
+	height:100%;
+	line-height: 50px;
 }
 .info_Self{
 	float: left;
@@ -148,7 +226,7 @@ body {
 }
 .details_info_line{
 	width: 100%;
-	border: 1px dashed #89C6C6;
+	border: 1px dashed #778495;
 	margin: 30px 0;
 }
 .details_Work_experience{
@@ -157,10 +235,10 @@ body {
 .details_info_head{
 	width: 100%;
 	height: 30px;
-	font-family: "Adobe 黑体 Std R";
 	font-size: 22px;
 	font-weight: bold;
-	color: #89C6C6;
+	color: #778495;
+	margin-top: 20px;
 }
 .margin_top_bottom{
 	margin: 30px 0;
@@ -184,20 +262,20 @@ body {
 .details_info_describe_box{
 	width: 100%;
 	height: auto;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .details_info_describe{
-	float: left;
-	font-family: "Adobe 黑体 Std R";
 	font-size: 22px;
 	font-weight: bold;
-	color: #89C6C6;
-	width: 15%;
+	color: #778495;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .details_info_content{
-	float: left;
+	margin-left: 50px;
 	font-size: 20px;
-	width:85%;
+	line-height: 35px;
 }
 .details_Project_experience{
 	width: 100%;
@@ -210,14 +288,23 @@ body {
 }
 .details_Vocational_skills_r{
 	float: left;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-	border-radius: 100px;
-	background-color: #89C6C6;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 70px;
+	background-color: #778495;
 	text-align: center;
 	color: #ffffff;
-	font-size: 40px;
+	font-size: 30px;
 	margin: 0 5px;
+}
+.about_img{
+	position: relative;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: auto;
 
 }
