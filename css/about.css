@@ -78,7 +78,7 @@ body {
 	height: 260px;
 	border: 5px solid #cdd9e9;
 	position: relative;
-	top: 100px;
+	top: 90px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -86,7 +86,7 @@ body {
 .info_left_border_img{
 	margin-top: 10px;
 	width: 180px;
-	right: -35px;
+	right: -20px;
 	position: relative;
 }
 .my_self_web{
