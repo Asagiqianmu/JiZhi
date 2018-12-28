@@ -59,9 +59,17 @@
                 </div>
                 <div class="info_contents_type_box">
                     <div class="info_contents_type" id="contents_type">
-                        <div class="info_contents_app info_contents_style">移动端App</div>
-                        <div class="info_contents_web">网页设计</div>
-                        <div class="info_contents_other">其他</div>
+                        <div class="info_contents_app info_contents_style">
+                            <div class="info_contents_app_s1">移动端App</div>
+                            <div class="info_contents_app_s2">点击展示 →</div>
+                        </div>
+                        <div class="info_contents_web">
+                            <div class="info_contents_app_s1">网页设计</div>
+                            <div class="info_contents_app_s3">点击展示 →</div></div>
+                        <div class="info_contents_other">
+                            <div class="info_contents_app_s1">其他</div>
+                            <div class="info_contents_app_s4">点击展示 →</div>
+                        </div>
                     </div>
                 </div>
                 <div class="info_contents_one">
@@ -113,7 +121,9 @@
         $(this).addClass("info_contents_style");
         $(".info_contents_one").css("display",'block');
         $(".info_contents_two").css("display",'none');
-        $(".info_contents_three").css("display",'none');
+        $(".info_contents_app_s2").css("opacity",'0');
+        $(".info_contents_app_s3").css("opacity",'1');
+        $(".info_contents_app_s4").css("opacity",'1');
     })
     $(".info_contents_web").click(function () {
         $("#contents_type div").removeClass("info_contents_style")
@@ -121,6 +131,9 @@
         $(".info_contents_two").css("display",'block');
         $(".info_contents_one").css("display",'none');
         $(".info_contents_three").css("display",'none');
+        $(".info_contents_app_s2").css("opacity",'1');
+        $(".info_contents_app_s3").css("opacity",'0');
+        $(".info_contents_app_s4").css("opacity",'1');
     })
     $(".info_contents_other").click(function () {
         $("#contents_type div").removeClass("info_contents_style")
@@ -128,6 +141,9 @@
         $(".info_contents_three").css("display",'block');
         $(".info_contents_one").css("display",'none');
         $(".info_contents_two").css("display",'none');
+        $(".info_contents_app_s2").css("opacity",'1');
+        $(".info_contents_app_s3").css("opacity",'1');
+        $(".info_contents_app_s4").css("opacity",'0');
     })
 
     $(window).scroll(function () {
