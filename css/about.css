@@ -211,16 +211,19 @@ body {
 }
 .info_contents_app_s2{
 	margin-top: 90px;
-	font-size: 20px;
+	font-size: 16px;
 	opacity: 0;
+	color: #acacac;
 }
 .info_contents_app_s3{
 	margin-top: 90px;
-	font-size: 20px;
+	font-size: 16px;
+	color: #acacac;
 }
 .info_contents_app_s4{
 	margin-top: 90px;
-	font-size: 20px;
+	font-size: 16px;
+	color: #acacac;
 }
 
 .info_contents_web{
