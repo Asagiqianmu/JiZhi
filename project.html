@@ -89,7 +89,24 @@
             </div>
         </div>
     </div>
+    <div id="asagi" class="asagi"><i class="fa fa-arrow-up fa-2x"></i></div>
 </div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#asagi").click(function () {
+        $('html').scrollTop(0);
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 200)
+        {
+            $("#asagi").addClass('box_m');
+        }
+        else{
+            $("#asagi").removeClass('box_m');
+        }
+    })
+</script>
 <script>
     $(".info_contents_app").click(function () {
         $("#contents_type div").removeClass("info_contents_style")
