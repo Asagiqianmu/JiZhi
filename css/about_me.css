@@ -46,7 +46,7 @@ body {
 	z-index: 100;
 }
 .info_img{
-	margin-top: 100px;
+	margin-top: 130px;
 	width: 238px;
 	height: 333px;
 	margin-left: 55px;
@@ -62,7 +62,7 @@ body {
 	height: 50px;
 	line-height: 50px;
 	margin-left: 55px;
-	margin-top: 50px;
+	margin-top: 100px;
 	text-align: center;
 	color: #778495;
 	font-size: 30px;
@@ -175,7 +175,7 @@ body {
 	z-index: 99;
 }
 .details_info{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 .edu_title{
 	width: 100%;
@@ -339,4 +339,8 @@ body {
 .box_m{
 	display: block;
 	opacity: .5;
+}
+.foter{
+	height: 50px;
+	width: 100%;
 }
