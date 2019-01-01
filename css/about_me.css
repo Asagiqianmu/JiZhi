@@ -46,7 +46,7 @@ body {
 	z-index: 100;
 }
 .info_img{
-	margin-top: 80px;
+	margin-top: 100px;
 	width: 238px;
 	height: 333px;
 	margin-left: 55px;
@@ -62,7 +62,7 @@ body {
 	height: 50px;
 	line-height: 50px;
 	margin-left: 55px;
-	margin-top: 150px;
+	margin-top: 100px;
 	text-align: center;
 	color: #778495;
 	font-size: 30px;
@@ -113,7 +113,6 @@ body {
 	color: rgba(0,0,0,.8);
 }
 .info_Work_experience{
-	margin-top: 100px;
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
@@ -124,7 +123,6 @@ body {
 	border: 2px solid #778495;
 }
 .info_Project_experience{
-	margin-top: 100px;
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
@@ -344,5 +342,4 @@ body {
 }
 .foter{
 	height: 50px;
-	width: 100%;
 }
